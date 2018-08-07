@@ -6,9 +6,9 @@ const BoycottReasonForm = props => {
     return (
         <form onSubmit={handleSubmit}>
             <div>
-                <label class="title is-3" >Reasons</label>
-                <div class="field">
-                    <div class="control">
+                <label className="title is-3" >Reasons</label>
+                <div className="field">
+                    <div className="control">
                         <label>
                             <Field
                                 name="Animal Testing"
@@ -21,8 +21,8 @@ const BoycottReasonForm = props => {
                     </label>
                     </div>
                 </div>
-                <div class="field">
-                    <div class="control">
+                <div className="field">
+                    <div className="control">
                         <label >
                             <Field
                                 name="Worker Mistreatment"
@@ -34,8 +34,8 @@ const BoycottReasonForm = props => {
                     </label>
                     </div>
                 </div>
-                <div class="field">
-                    <div class="control">
+                <div className="field">
+                    <div className="control">
                         <label >
                             <Field
                                 name="Environmental Policies"
@@ -47,8 +47,8 @@ const BoycottReasonForm = props => {
                     </label>
                     </div>
                 </div>
-                <div class="field">
-                    <div class="control">
+                <div className="field">
+                    <div className="control">
                         <label >
                             <Field
                                 name="Anti-LGBTQ+"
@@ -60,8 +60,8 @@ const BoycottReasonForm = props => {
                     </label>
                     </div>
                 </div>
-                <div class="field">
-                    <div class="control">
+                <div className="field">
+                    <div className="control">
                         <label >
                             <Field
                                 name="Sexist Behaviour"
@@ -73,8 +73,8 @@ const BoycottReasonForm = props => {
                     </label>
                     </div>
                 </div>
-                <div class="field">
-                    <div class="control">
+                <div className="field">
+                    <div className="control">
                         <label >
                             <Field
                                 name="Racist Behaviour"
@@ -86,11 +86,11 @@ const BoycottReasonForm = props => {
                     </label>
                     </div>
                 </div>
-                <div class="field">
-                    <div class="control">
+                <div className="field">
+                    <div className="control">
                         <label htmlFor="otherReason">Other</label>
                         <Field
-                            class="input"
+                            className="input"
                             name="other"
                             component="input"
                             type="text"
@@ -100,8 +100,8 @@ const BoycottReasonForm = props => {
                         />
                     </div>
                 </div>
-                <div class="control">
-                    <button class="button is-primary" type="submit">Submit</button>
+                <div className="control">
+                    <button className="button is-primary" type="submit">Submit</button>
                 </div>
             </div>
         </form>
