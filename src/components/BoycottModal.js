@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { Component } from 'react';
 import BoycottReasonForm from './BoycottForm';
 
@@ -14,13 +15,21 @@ export class BoycottModal extends Component {
 
         return (
             <div className={this.props.isActive ? 'is-active modal' : 'modal'} >
+=======
+import React from 'react';
+import BoycottReasonForm from './BoycottForm';
+
+export default ({isActive, onModalToggle}) => (
+        isActive ?
+            <div className={isActive ? 'is-active modal' : 'modal'} >
+>>>>>>> afd9c02ff5d0101949e8cc412957e103c7797413
                 <div className="modal-background"></div>
                 <div className="modal-card">
                     <header className="modal-card-head">
                         <button 
                             className="delete"
                             aria-label="close"
-                            onClick={this.props.onClose}
+                            onClick={() => onModalToggle(!isActive)}
                         ></button>
                     </header>
                     <section className="modal-card-body">
@@ -30,8 +39,6 @@ export class BoycottModal extends Component {
                     </footer>
                 </div>
             </div>
-        );
-      }
-}
-
-export default BoycottModal;
+        :
+        null
+    );
