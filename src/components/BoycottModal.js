@@ -1,5 +1,5 @@
 import React from 'react';
-import BoycottReasonForm from './BoycottForm';
+import AddBoycottWizardForm from './AddBoycottWizardForm';
 import { connect } from 'react-redux';
 import { updateBoycotts } from '../actions/boycottActions';
 
@@ -16,7 +16,7 @@ const mapDispatchToProps = {
 }
 
 const submit = values => {
-    console.log(this.props.updateBoycotts);
+    //console.log(values);
     //print the form values to console
     this.props.updateBoycotts(values);
     
@@ -37,7 +37,7 @@ const boycottModal = ({isActive, onModalToggle}) => (
                     ></button>
                 </header>
                 <section className="modal-card-body">
-                    <BoycottReasonForm onSubmit={submit} />
+                    <AddBoycottWizardForm onSubmit={submit} />
                 </section>
                 <footer className="modal-card-foot">
                 </footer>
