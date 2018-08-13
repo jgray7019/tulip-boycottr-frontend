@@ -16,9 +16,9 @@ const mapDispatchToProps = {
 }
 
 const submit = values => {
-    //console.log(values);
+    console.log(values);
     //print the form values to console
-    this.props.updateBoycotts(values);
+    //this.props.updateBoycotts(values);
     
     //create a post to send the form to the backend
 
