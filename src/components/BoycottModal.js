@@ -7,19 +7,23 @@ import { updateBoycotts } from '../actions/boycottActions';
 import { toggleModal } from '../actions/boycottModalActions';
 
 
+
+
+
 class BoycottModal extends Component {
 
-
-const submit = values => {
-    console.log(values);
-    //print the form values to console
-    //this.props.updateBoycotts(values);
+     submit = values => {
+        console.log(values);
+        //print the form values to console
+        //this.props.updateBoycotts(values);
+        
+        //create a post to send the form to the backend
+     };
     
-    //create a post to send the form to the backend
+      placesSearch = searchTerm => {
+        this.props.fetchSearchedPlaces(searchTerm);
+      };
 
-  placesSearch = searchTerm => {
-    this.props.fetchSearchedPlaces(searchTerm);
-  };
 
 
   renderSearchedPlaces = () => {
