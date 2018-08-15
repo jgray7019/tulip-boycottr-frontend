@@ -54,7 +54,7 @@ class BoycottModal extends Component {
               </header>
                 <section className="modal-card-body">
 
-                    <AddBoycottWizardForm onSubmit={submit} />
+                    <AddBoycottWizardForm onSubmit={this.submit} />
 
                   <div className='control'>
                     <input ref={ref => this.input = ref} className='input is-info is-large' type='text' placeholder='Search Nearby Places' />
